@@ -34,12 +34,12 @@ RUN apk add --no-cache \
 		awscli==1.18.70 \
 		pywinrm[kerberos]==0.4.1 \
 		docker==4.2.1 \
+		docker-compose \
 		&& \
 	apk del build-dependencies \
 		&& \
 	rm -rf /root/.cache
 
-RUN ansible-galaxy install andrewrothstein.docker-compose
 
 VOLUME ["/tmp/playbook"]
 
