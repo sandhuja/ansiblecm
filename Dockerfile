@@ -25,8 +25,6 @@ RUN apk add --no-cache \
 		&& \
 	python3 -m ensurepip --upgrade \
 	  && \
-	pip install --upgrade pip \
-	&& \
 	pip3 install \
 		ansible==2.9.9 \
 		botocore==1.16.20 \
