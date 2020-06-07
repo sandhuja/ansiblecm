@@ -39,6 +39,8 @@ RUN apk add --no-cache \
 		&& \
 	rm -rf /root/.cache
 
+RUN ansible-galaxy install andrewrothstein.docker-compose
+
 VOLUME ["/tmp/playbook"]
 
 WORKDIR /tmp/playbook
