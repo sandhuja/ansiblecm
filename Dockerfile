@@ -34,7 +34,7 @@ RUN apk add --no-cache \
 		awscli==1.18.70 \
 		pywinrm[kerberos]==0.4.1 \
 		docker==4.2.1 \
-		docker-compose \
+		docker-compose==1.26.0 \
 		&& \
 	apk del build-dependencies \
 		&& \
